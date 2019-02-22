@@ -1,0 +1,23 @@
+my_l = []
+for i in range(10000, 99999):
+    my_l.append(i) 
+    for j in range(2,int(i/2)):
+        if i%j==0:
+            my_l.remove(i)
+            break
+
+max = 0
+for x in range(0, len(my_l)-1):
+    for y in range(0, len(my_l)-1):
+        a = str(my_l[x]*my_l[y])
+        ap = a[::-1]
+        if a==ap:
+            if my_l[x]*my_l[y]>max:
+                max = my_l[x]*my_l[y]
+                c1 = my_l[x]
+                c2 = my_l[y]
+
+if max!=0:
+    print('{}*{}={}'.format(c1, c2, max))
+else:
+    print("There is no answer")
