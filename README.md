@@ -1,2 +1,2 @@
 # Palindrom
-The biggest palindrom for 5digit simple numbers
+The biggest palindrom for 5digit simple numbers on Python
